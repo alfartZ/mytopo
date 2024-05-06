@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://10.61.24.52/spog/dashboard/:enterprise#5G%20Experience%20Lab -->
+
+<html lang="en">
+   <head>
+      {% load static %}
+      {% block headers %}
+      {% include 'includes/header.html' %}
+      {% endblock %}
+   </head>
+
+   <body classname="k-body" style="--kendo-scrollbar-width: 17px;">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root">
+         <div>
+            {% include 'includes/app_header.html' %}
+            <main class="App-main">
+               <div id="mainDiv">
+                  <div id="divTabBar">
+                     <button type="button" class="spogButtons topToolbarLeftButtons btn btn-primary">Overview</button> 
+                     <button type="button" class="spogButtons spogButtonsSelected topToolbarLeftButtons btn btn-primary">Enterprise</button> 
+                     <button type="button" class="spogButtons topToolbarLeftButtons btn btn-primary">Operations</button> 
+                  </div>
+                  
+                  <div id="divTileLayoutED">
+                     {% include 'includes/enterprise_list.html' %}
+                     {% if page in ['dashboard', 'health_processor'] %}
+                     <div class="k-tilelayout k-pos-relative k-grid-flow-col" style="grid-template-columns: repeat(24, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 120px); gap: 10px; padding: 10px;">
+                        {% include 'spog3/dashboard.html' %}
+                     </div>
+                     
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      <script type="text/javascript" src="{% static 'mapcontrol' %}" async="" defer=""></script>
+      <script type="text/javascript" src="{% static 'vis.min.js' %}"></script>
+      <script type="text/javascript" src="{% static 'js/topology.js' %}"></script>
+   </body>
+</html>

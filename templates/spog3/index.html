@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://10.61.24.52/spog/dashboard/:enterprise#5G%20Experience%20Lab -->
+{% load static %}
+
+<html lang="en">
+   <head>
+      {% include 'includes/header.html' %}
+   </head>
+
+   <body classname="k-body" style="--kendo-scrollbar-width: 17px;">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root">
+         <div>
+            {% include 'includes/app_header.html' %}
+            <main class="App-main">
+               <div id="mainDiv">
+                  <div id="divTabBar">
+                     <button type="button" class="spogButtons topToolbarLeftButtons btn btn-primary">Overview</button> 
+                     <button type="button" class="spogButtons spogButtonsSelected topToolbarLeftButtons btn btn-primary">Enterprise</button> 
+                     <button type="button" class="spogButtons topToolbarLeftButtons btn btn-primary">Operations</button>
+                  </div>
+                  <div id="divTileLayoutED">
+                     {% include 'includes/enterprise_list.html' %}
+                     <div class="k-tilelayout k-pos-relative k-grid-flow-col" style="grid-template-columns: repeat(24, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 120px); gap: 10px; padding: 10px;">
+                        {% include 'spog3/dashboard.html' %}
+                     </div>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+      <script type="text/javascript" src="{% static 'mapcontrol' %}" async="" defer=""></script>
+      <script type="text/javascript" src="{% static 'vis.min.js' %}"></script>
+      <script type="text/javascript">
+         var nodes = JSON.parse('{{ nodes|escapejs }}');
+         var edges = JSON.parse('{{ edges|escapejs }}');
+         var i=0;
+         nodes.forEach(function(data) {
+            nodes[i]["shape"] = 'image';
+            switch(nodes[i]["type"]){
+               case 'network':
+                  $images = "{% static 'icons/switch.png' %}";
+                  break;
+               case 'server':
+                  $images = "{% static 'icons/controller_server.png' %}";
+                  break;
+               case 'firewall':
+                  $images = "{% static 'icons/firewall.png' %}";
+                  break;
+               default:
+                  $images = "{% static 'icons/group_user.png' %}";
+                  break;
+            }
+            nodes[i]['image'] = $images;
+            i+=1;
+         });
+         console.log(nodes);
+         // var options = {
+         //       interaction: {
+         //          zoomView: true, // nonaktifkan zoom
+         //          dragNodes: true // aktifkan geser node
+         //       },
+         //       physics: {
+         //          enabled: true,
+         //          stabilization: true // aktifkan animasi stabilitasi
+         //       },
+         //       layout: {
+         //          hierarchical: {
+         //             direction: 'UD', // arah tata letak kiri ke kanan
+         //             // sortMethod: 'directed' // urutkan berdasarkan arah edge
+         //          }
+         //       },
+         //       interaction: {
+         //          hover: true
+         //       }
+         //    };
+         var options = 
+            {
+               layout:{
+                     randomSeed:2
+               },
+               "nodes": {
+                  shape : 'circle',
+               },
+               "edges": {
+                  arrows: {
+                        to:     {enabled: true, scaleFactor:0.5},
+                  },
+                  "smooth": {
+                     enabled: false
+                  },
+                  font: {
+                     size: 14,
+                     color: "red",
+                     face: "sans",
+                     background: "white",
+                     strokeWidth:3,
+                     align: "middle",
+                     strokeWidth: 2
+                  }
+               },
+               "physics": {
+                  "barnesHut": {
+                     "gravitationalConstant": -2000,
+                     "centralGravity": 0.3,
+                     "springLength": 200,
+                     "springConstant": 0.04,
+                     "damping": 0.09,
+                     "avoidOverlap": 1
+                  },
+
+                  "forceAtlas2Based": {
+                     "gravitationalConstant": -50,
+                     "centralGravity": 0.01,
+                     "springLength": 200,
+                     "springConstant": 0.08,
+                     "damping": 0.4,
+                     "avoidOverlap": 1
+                  },
+
+                  "repulsion": {
+                     "centralGravity": 0.2,
+                     "springLength": 250,
+                     "springConstant": 0.2,
+                     "nodeDistance": 200,
+                     "damping": 0.07
+                  },
+
+                  "hierarchicalRepulsion": {
+                     "nodeDistance": 300,
+                     "centralGravity": 0.2,
+                     "springLength": 300,
+                     "springConstant": 0.2,
+                     "damping": 0.07
+                  },
+
+               "maxVelocity": 50,
+               "minVelocity": 0.4,
+               "solver": "hierarchicalRepulsion",
+               "stabilization": {
+                  "enabled": true,
+                  "iterations": 1000,
+                  "updateInterval": 100,
+                  "onlyDynamicEdges": false,
+                  "fit": true
+               },
+
+               "timestep": 0.4,
+               }
+            };
+
+         var container = document.getElementById('topologyDiv');
+         var data = {
+            nodes: nodes,
+            edges: edges,
+            stabilize: true
+         };
+         
+         var network = new vis.Network(container, data, options);
+         network.on('click', function (properties) {
+            if (properties.nodes > 0) {
+                  window.location.href = "health/"+properties.nodes
+            }
+         });
+
+      </script>
+   </body>
+</html>

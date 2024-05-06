@@ -1,0 +1,1518 @@
+{% load static %}
+<div class="k-tilelayout k-pos-relative k-grid-flow-col" style="grid-template-columns: repeat(24, minmax(0px, 1fr)); grid-auto-rows: minmax(0px, 120px); gap: 10px; padding: 10px;">
+    <div style="grid-column: 1 / span 3; grid-row-end: span 2; order: 0;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 1 / span 3; grid-row-end: span 2; outline: none; order: 0; display: none; height: 103px; width: 148px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 1 / span 3; grid-row-end: span 2; order: 0; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header">
+            <h5 class="k-card-title">Devices</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container" style="top: 30px;">
+                <div class="top-child">3</div>
+                <div class="bottom-child">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-exclamation" class="svg-inline--fa fa-circle-exclamation bottomTileIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path>
+                    </svg>
+                    <span style="color: rgb(242, 102, 95); padding-left: 6px;">1</span> Offline
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'deviceIcon.png' %}" height="42" style="position: absolute; top: 15px; right: 15px;">
+        </div>
+    </div>
+    <div style="grid-column: 4 / span 3; grid-row-end: span 2; order: 1;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 4 / span 3; grid-row-end: span 2; outline: none; order: 1; display: none; height: 103px; width: 148px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 4 / span 3; grid-row-end: span 2; order: 1; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header">
+            <h5 class="k-card-title">QOE</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container" style="top: 30px;">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="k-gauge k-arcgauge" style="height: 100%; width: 100%; position: relative;">
+                    <div class="k-arcgauge-label" style="left: 44.5px; top: 26.172px;">
+                        <h4 style="color: green;">2.59</h4>
+                    </div>
+                    <div style="width: 136px; height: 73px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.75px; top: 0px;">
+                            <defs></defs>
+                            <g>
+                                <path d="M0 0 L 136 0 136 73 0 73Z" stroke="none" fill="none"></path>
+                                <g>
+                                <g></g>
+                                <g></g>
+                                </g>
+                                <g>
+                                <path d="M36.645 20.016 C 47.19 12.354 60.613 8.758 73.576 10.12 86.539 11.483 98.921 17.791 107.642 27.478 116.364 37.164 121.344 50.138 121.344 63.172" stroke="rgb(235, 235, 235)" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                                <path d="M14.656 63.172 C 14.656 54.793 16.666 46.42 20.47 38.954 24.274 31.488 29.866 24.941 36.645 20.016" stroke="#FDB515" stroke-width="8" stroke-linecap="round" fill="none"></path>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'qoeIcon.png' %}" height="42" style="position: absolute; top: 15px; right: 15px;">
+        </div>
+    </div>
+    <div style="grid-column: 7 / span 3; grid-row-end: span 2; order: 2;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 7 / span 3; grid-row-end: span 2; outline: none; order: 2; display: none; height: 103px; width: 148px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 7 / span 3; grid-row-end: span 2; order: 2; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header">
+            <h5 class="k-card-title">Alarms</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container" style="top: 30px;">
+                <div class="top-child">2</div>
+                <div class="bottom-child">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell bottomTileIcon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path>
+                    </svg>
+                    <span style="color: rgb(242, 102, 95); padding-left: 6px;">1</span> Critical
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'criticalIcon.png' %}" height="42" style="position: absolute; top: 15px; right: 15px;">
+        </div>
+    </div>
+    <div style="grid-column: 10 / span 5; grid-row-end: span 2; order: 3;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 10 / span 5; grid-row-end: span 2; outline: none; order: 3; display: none; height: 103px; width: 253px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 10 / span 5; grid-row-end: span 2; order: 3; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Traffic (MB)</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divtrafficOverallTrending" style="visibility: visible;">
+                    <button id=":rb:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.234375px; top: 0px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef13">
+                                <path d="M27.5 5.5 L 234.5 5.5 234.5 52.5 27.5 52.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                                <clippath clip-rule="evenodd" id="kdef14">
+                                <path d="M0 0 L 241 0 241 73 0 73Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 241 0 241 73 0 73Z" stroke="none" fill="none"></path>
+                                <path d="M27 5 L 234.077 5 234.077 52 27 52Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g></g>
+                                <g></g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M27.5 52.5 L 234.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef13)">
+                                    <g clip-path="url(#kdef14)">
+                                        <path d="M30.57 21.463 C 32.948 22.661 35.333 23.94 37.711 25.06 40.089 26.179 42.474 28.189 44.851 28.189 47.229 28.189 49.614 26.733 51.992 26.733 54.37 26.733 56.755 32.387 59.133 32.387 61.51 32.387 63.895 29.546 66.273 27.522 68.651 25.498 71.036 20.23 73.414 20.23 75.792 20.23 78.176 20.644 80.554 20.644 82.932 20.644 85.317 19.536 87.695 19.536 90.073 19.536 92.458 23.166 94.835 24.09 97.213 25.015 99.598 25.089 101.976 25.089 104.354 25.089 106.739 24.518 109.117 24.518 111.494 24.518 113.879 25.386 116.257 25.386 118.635 25.386 121.02 22.958 123.398 22.958 125.775 22.958 128.16 24.874 130.538 27.172 132.916 29.47 135.301 36.76 137.679 36.76 140.057 36.76 142.442 32.4 144.819 31.073 147.197 29.746 149.582 28.789 151.96 28.789 154.338 28.789 156.723 29.051 159.101 29.051 161.478 29.051 163.863 14.709 166.241 14.709 168.619 14.709 171.004 29.288 173.382 29.288 175.759 29.288 178.144 13.486 180.522 13.486 182.9 13.486 185.285 31.944 187.663 36.026 188.812 37.999 192.426 37.999 194.803 37.999 197.181 37.999 199.566 32.543 201.944 32.543 204.322 32.543 206.707 34.583 209.085 35.114 211.462 35.646 213.847 35.736 216.225 35.736 218.603 35.736 220.988 26.745 223.366 22.693 225.743 18.641 228.128 15.161 230.506 11.4" stroke="#F2665F" stroke-width="2" fill="none" opacity="1"></path>
+                                    </g>
+                                    <circle cx="209.085" cy="35.114" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="223.366" cy="22.693" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                </g>
+                                <g>
+                                    <text x="25.070500000000003" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="39.3515" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="53.63250000000001" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <text x="67.9135" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">00</text>
+                                </g>
+                                <g>
+                                    <text x="82.195" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">02</text>
+                                </g>
+                                <g>
+                                    <text x="96.476" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">04</text>
+                                </g>
+                                <g>
+                                    <text x="110.757" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">06</text>
+                                </g>
+                                <g>
+                                    <text x="125.0385" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">08</text>
+                                </g>
+                                <g>
+                                    <text x="139.3195" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">10</text>
+                                </g>
+                                <g>
+                                    <text x="153.6005" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">12</text>
+                                </g>
+                                <g>
+                                    <text x="167.88150000000002" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">14</text>
+                                </g>
+                                <g>
+                                    <text x="182.163" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">16</text>
+                                </g>
+                                <g>
+                                    <text x="196.44400000000002" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="210.725" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="225.00650000000002" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M27.5 5.5 L 27.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="16" y="55.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">0</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="37.875" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">150</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="20.25" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">300</text>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'traffic24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 15 / span 5; grid-row-end: span 2; order: 4;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 15 / span 5; grid-row-end: span 2; outline: none; order: 4; display: none; height: 103px; width: 253px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 15 / span 5; grid-row-end: span 2; order: 4; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Connected Users</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divusersOverallTrending" style="visibility: visible;">
+                    <button id=":rc:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.15625px; top: 0px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef16">
+                                <path d="M16.5 5.5 L 234.5 5.5 234.5 52.5 16.5 52.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 241 0 241 73 0 73Z" stroke="none" fill="none"></path>
+                                <path d="M16 5 L 234.267 5 234.267 52 16 52Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g></g>
+                                <g></g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M16.5 52.5 L 234.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef16)">
+                                    <g>
+                                        <g>
+                                            <g>
+                                            <path d="M18.258 22.86 L 21.258 22.86 21.258 52 18.258 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M25.784 34.14 L 28.784 34.14 28.784 52 25.784 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M33.311 34.14 L 36.311 34.14 36.311 52 33.311 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M40.837 16.146 L 43.837 16.146 43.837 52 40.837 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M48.364 22.86 L 51.364 22.86 51.364 52 48.364 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M55.89 34.14 L 58.89 34.14 58.89 52 55.89 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M63.417 27.426 L 66.417 27.426 66.417 52 63.417 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M70.943 34.14 L 73.943 34.14 73.943 52 70.943 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M78.469 27.426 L 81.469 27.426 81.469 52 78.469 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M85.996 16.146 L 88.996 16.146 88.996 52 85.996 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M93.522 31.857 L 96.522 31.857 96.522 52 93.522 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M101.049 18.429 L 104.049 18.429 104.049 52 101.049 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M108.575 16.146 L 111.575 16.146 111.575 52 108.575 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M116.102 11.714 L 119.102 11.714 119.102 52 116.102 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M123.628 38.571 L 126.628 38.571 126.628 52 123.628 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            <path d="M124.5 39.5 L 127.5 39.5 127.5 52.5 124.5 52.5Z" stroke="#fff" stroke-width="1" stroke-opacity="0.2" fill="#fff" fill-opacity="0.2" style="display: none;"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M131.154 34.14 L 134.154 34.14 134.154 52 131.154 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M138.681 25.143 L 141.681 25.143 141.681 52 138.681 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M146.207 31.857 L 149.207 31.857 149.207 52 146.207 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M153.734 13.997 L 156.734 13.997 156.734 52 153.734 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M161.26 16.146 L 164.26 16.146 164.26 52 161.26 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M168.787 18.429 L 171.787 18.429 171.787 52 168.787 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M176.313 20.711 L 179.313 20.711 179.313 52 176.313 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M183.839 34.14 L 186.839 34.14 186.839 52 183.839 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M191.366 22.86 L 194.366 22.86 194.366 52 191.366 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M198.892 36.289 L 201.892 36.289 201.892 52 198.892 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M206.419 29.574 L 209.419 29.574 209.419 52 206.419 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M213.945 29.574 L 216.945 29.574 216.945 52 213.945 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M221.472 18.429 L 224.472 18.429 224.472 52 221.472 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <path d="M228.998 18.429 L 231.998 18.429 231.998 52 228.998 52Z" stroke="#ca9111" stroke-width="0" stroke-opacity="1" fill="#FDB515" fill-opacity="1"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="14.263000000000002" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="29.316000000000003" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="44.369" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <text x="59.422" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">00</text>
+                                </g>
+                                <g>
+                                    <text x="74.4745" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">02</text>
+                                </g>
+                                <g>
+                                    <text x="89.5275" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">04</text>
+                                </g>
+                                <g>
+                                    <text x="104.5805" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">06</text>
+                                </g>
+                                <g>
+                                    <text x="119.63300000000001" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">08</text>
+                                </g>
+                                <g>
+                                    <text x="134.686" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">10</text>
+                                </g>
+                                <g>
+                                    <text x="149.739" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">12</text>
+                                </g>
+                                <g>
+                                    <text x="164.792" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">14</text>
+                                </g>
+                                <g>
+                                    <text x="179.84449999999998" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">16</text>
+                                </g>
+                                <g>
+                                    <text x="194.89749999999998" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="209.9505" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="225.0035" y="66" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M16.5 5.5 L 16.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="5" y="55.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">0</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="42.071" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">1</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="28.643" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">2</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="15.214000000000002" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">3</text>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'users24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 20 / span 5; grid-row-end: span 2; order: 5;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 20 / span 5; grid-row-end: span 2; outline: none; order: 5; display: none; height: 103px; width: 253px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 20 / span 5; grid-row-end: span 2; order: 5; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Capacity</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divcapacityOverallTrending" style="visibility: visible;">
+                    <button id=":rd:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.078125px; top: 0px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef19">
+                                <path d="M16.5 5.5 L 234.5 5.5 234.5 52.5 16.5 52.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                                <clippath clip-rule="evenodd" id="kdef20">
+                                <path d="M0 0 L 241 0 241 73 0 73Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 241 0 241 73 0 73Z" stroke="none" fill="none"></path>
+                                <path d="M16 5.309 L 234.267 5.309 234.267 52.031 16 52.031Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g></g>
+                                <g></g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M16.5 52.5 L 234.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef19)">
+                                    <g clip-path="url(#kdef20)">
+                                        <path d="M19.763 18.287 C 22.27 19.878 24.783 22.182 27.29 23.063 28.765 23.582 32.31 23.479 34.816 23.582 37.322 23.686 42.012 23.582 42.343 23.686 44.849 24.473 47.363 28.307 49.869 28.307 52.375 28.307 54.889 14.134 57.395 14.134 59.902 14.134 62.416 27.476 64.922 27.476 67.428 27.476 69.942 16.782 72.448 16.782 74.955 16.782 77.468 24.88 79.975 24.88 82.481 24.88 84.995 15.744 87.501 15.744 90.007 15.744 92.521 17.406 95.028 18.858 97.534 20.31 100.048 24.465 102.554 24.465 105.06 24.465 107.574 13.356 110.08 13.356 112.587 13.356 115.101 15.884 117.607 17.509 120.113 19.134 122.627 23.115 125.133 23.115 127.64 23.115 130.153 18.235 132.66 18.235 135.166 18.235 137.68 21.662 140.186 21.662 142.692 21.662 145.206 18.71 147.713 17.353 150.219 15.996 152.733 13.511 155.239 13.511 157.745 13.511 160.378 13.511 162.765 16.055 165.272 18.726 167.786 29.553 170.292 29.553 172.798 29.553 175.312 14.446 177.818 14.446 180.325 14.446 182.838 23.738 185.345 23.738 187.851 23.738 190.365 16.607 192.871 14.342 195.377 12.077 197.891 10.137 200.398 10.137 202.904 10.137 205.418 10.5 207.924 10.5 210.43 10.5 212.944 8.268 215.45 8.268 217.957 8.268 220.471 22.492 222.977 22.492 225.483 22.492 227.997 14.667 230.503 10.76" stroke="#654EA3" stroke-width="2" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="14.263000000000002" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="29.316000000000003" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="44.369" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <text x="59.422" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">00</text>
+                                </g>
+                                <g>
+                                    <text x="74.4745" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">02</text>
+                                </g>
+                                <g>
+                                    <text x="89.5275" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">04</text>
+                                </g>
+                                <g>
+                                    <text x="104.5805" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">06</text>
+                                </g>
+                                <g>
+                                    <text x="119.63300000000001" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">08</text>
+                                </g>
+                                <g>
+                                    <text x="134.686" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">10</text>
+                                </g>
+                                <g>
+                                    <text x="149.739" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">12</text>
+                                </g>
+                                <g>
+                                    <text x="164.792" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">14</text>
+                                </g>
+                                <g>
+                                    <text x="179.84449999999998" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">16</text>
+                                </g>
+                                <g>
+                                    <text x="194.89749999999998" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="209.9505" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="225.0035" y="66.031" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M16.5 5.5 L 16.5 52.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="5" y="55.531" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">0</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="45.148" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">2</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="34.766" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">4</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="24.383" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">6</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="14" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">8</text>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'capacity24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 1 / span 8; grid-row-end: span 12; order: 6;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 1 / span 8; grid-row-end: span 12; outline: none; order: 6; display: none; height: 666px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 1 / span 8; grid-row-end: span 12; order: 6; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Network Topology</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div id="topologyDiv"></div>
+        </div>
+        <img src="{% static 'topology24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 9 / span 8; grid-row-end: span 9; order: 7;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 9 / span 8; grid-row-end: span 9; outline: none; order: 7; display: none; height: 497px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 9 / span 8; grid-row-end: span 9; order: 7; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Floor Plan</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div id="labFloorPlanDiv">
+            </div>
+        </div>
+        <img src="{% static 'floorplan24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 9 / span 8; grid-row-end: span 3; order: 8;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 9 / span 8; grid-row-end: span 3; outline: none; order: 8; display: none; height: 159px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 9 / span 8; grid-row-end: span 3; order: 8; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">RAN Alarms</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div id="divRanAlarmsGrid">
+                <div id="divSPOGGrid">
+                    <div id=":rj:" class="k-grid k-grid-md" data-keyboardnavscope="true" style="height: 100%; width: auto;">
+                    <div class="k-grid-aria-root" role="grid" aria-colcount="10" aria-rowcount="2" id=":rj:-role-element-id">
+                        <div class="k-grid-header" role="presentation">
+                            <div class="k-grid-header-wrap" role="presentation">
+                                <table class="k-table k-grid-header-table k-table-md" role="presentation" style="width: 1505px;">
+                                <colgroup>
+                                    <col width="150px">
+                                    <col width="100px">
+                                    <col width="125px">
+                                    <col width="130px">
+                                    <col width="125px">
+                                    <col width="175px">
+                                    <col width="125px">
+                                    <col width="250px">
+                                    <col width="150px">
+                                    <col width="175px">
+                                </colgroup>
+                                <thead class="k-table-thead" role="rowgroup" data-keyboardnavheader="true">
+                                    <tr class="k-table-row" role="row" aria-rowindex="1" style="touch-action: none;">
+                                        <th aria-sort="none" aria-colindex="1" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Alarm Type</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="2" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Category</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="3" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Source Type</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="4" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Node Name</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="5" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Source Name</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="6" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Last Changed</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="7" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Alarm Severity</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="8" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Action</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="9" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Alarm Source</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="10" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">ITU Event Type</span></span></span></th>
+                                    </tr>
+                                </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-grid-container" role="presentation">
+                            <div class="k-grid-content k-virtual-content" role="presentation">
+                                <div class="k-grid-table-wrap" role="presentation">
+                                <table class="k-table k-grid-table k-table-md" role="presentation" style="display: table; width: 1505px;">
+                                    <colgroup>
+                                        <col width="150px">
+                                        <col width="100px">
+                                        <col width="125px">
+                                        <col width="130px">
+                                        <col width="125px">
+                                        <col width="175px">
+                                        <col width="125px">
+                                        <col width="250px">
+                                        <col width="150px">
+                                        <col width="175px">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody" role="rowgroup" data-keyboardnavbody="true">
+                                        <tr class="k-table-row k-master-row" role="row" aria-rowindex="2" absolute-row-index="0" data-grid-row-index="0" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">Node Lost Comms</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">BS</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">RU</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">ED0864012DF0</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">ED0864012DF0</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">02/18</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Major</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="8" aria-selected="false" data-grid-col-index="7">Routing</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="9" aria-selected="false" data-grid-col-index="8">RAN</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="10" aria-selected="false" data-grid-col-index="9">Quality of Service Alarm</td>
+                                        </tr>
+                                        <tr class="k-table-row k-master-row k-table-alt-row k-alt" role="row" aria-rowindex="3" absolute-row-index="1" data-grid-row-index="1" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">5G Cell Out of Service</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">gNodeB</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">DU</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">ED0864112DF0</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">ED0864012DF0</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">02/18</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Critical</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="8" aria-selected="false" data-grid-col-index="7">service-restart</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="9" aria-selected="false" data-grid-col-index="8">RAN</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="10" aria-selected="false" data-grid-col-index="9">Equipment Alarm</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <div class="k-height-container" role="presentation">
+                                <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'alarms24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 17 / span 8; grid-row-end: span 3; order: 9;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 17 / span 8; grid-row-end: span 3; outline: none; order: 9; display: none; height: 159px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 17 / span 8; grid-row-end: span 3; order: 9; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">Device Usage</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divdeviceUsageOverallTrending" style="visibility: visible;">
+                    <button id=":re:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.703125px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef22">
+                                <path d="M32.5 43.5 L 393.5 43.5 393.5 108.5 32.5 108.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 399 0 399 129 0 129Z" stroke="none" fill="none"></path>
+                                <path d="M32 42.5 L 393 42.5 393 108 32 108Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g></g>
+                                <g>
+                                    <path d="M32.5 101.5 L 393.5 101.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 95.5 L 393.5 95.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 88.5 L 393.5 88.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 82.5 L 393.5 82.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 75.5 L 393.5 75.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 69.5 L 393.5 69.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 62.5 L 393.5 62.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 56.5 L 393.5 56.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 49.5 L 393.5 49.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M32.5 43.5 L 393.5 43.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                </g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M32.5 108.5 L 393.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef22)">
+                                    <g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M35.61 102.659 L 40.61 102.659 40.61 108 35.61 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M47.643 95.698 L 52.643 95.698 52.643 108 47.643 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M59.677 90.628 L 64.677 90.628 64.677 108 59.677 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M71.71 86.032 L 76.71 86.032 76.71 108 71.71 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M83.743 92.183 L 88.743 92.183 88.743 108 83.743 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M95.777 74.762 L 100.777 74.762 100.777 108 95.777 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M107.81 91.301 L 112.81 91.301 112.81 108 107.81 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M119.843 77.918 L 124.843 77.918 124.843 108 119.843 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M131.877 83.441 L 136.877 83.441 136.877 108 131.877 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M143.91 78.61 L 148.91 78.61 148.91 108 143.91 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M155.943 79.776 L 160.943 79.776 160.943 108 155.943 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M167.977 83.566 L 172.977 83.566 172.977 108 167.977 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M180.01 82.048 L 185.01 82.048 185.01 108 180.01 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M192.043 78.392 L 197.043 78.392 197.043 108 192.043 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M204.077 74.123 L 209.077 74.123 209.077 108 204.077 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M216.11 90.551 L 221.11 90.551 221.11 108 216.11 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M228.143 91.93 L 233.143 91.93 233.143 108 228.143 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M240.177 94.584 L 245.177 94.584 245.177 108 240.177 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M252.21 91.852 L 257.21 91.852 257.21 108 252.21 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M264.243 73.554 L 269.243 73.554 269.243 108 264.243 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                                <path d="M264.5 74.5 L 269.5 74.5 269.5 108.5 264.5 108.5Z" stroke="#fff" stroke-width="1" stroke-opacity="0.2" fill="#fff" fill-opacity="0.2" style="display: none;"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M276.277 50.375 L 281.277 50.375 281.277 108 276.277 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M288.31 50.982 L 293.31 50.982 293.31 108 288.31 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M300.343 78.74 L 305.343 78.74 305.343 108 300.343 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M312.377 71.43 L 317.377 71.43 317.377 108 312.377 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M324.41 66.498 L 329.41 66.498 329.41 108 324.41 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M336.443 83.047 L 341.443 83.047 341.443 108 336.443 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M348.477 92.537 L 353.477 92.537 353.477 108 348.477 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M360.51 87.589 L 365.51 87.589 365.51 108 360.51 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M372.543 84.823 L 377.543 84.823 377.543 108 372.543 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                                <path d="M373.5 85.5 L 377.5 85.5 377.5 108.5 373.5 108.5Z" stroke="#fff" stroke-width="1" stroke-opacity="0.2" fill="#fff" fill-opacity="0.2" style="display: none;"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                            <g>
+                                                <path d="M384.577 80.935 L 389.577 80.935 389.577 108 384.577 108Z" stroke="#6971a0" stroke-width="0" stroke-opacity="1" fill="#838DC8" fill-opacity="1"></path>
+                                            </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="32.5165" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">17</text>
+                                </g>
+                                <g>
+                                    <text x="56.5835" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">19</text>
+                                </g>
+                                <g>
+                                    <text x="80.65" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">21</text>
+                                </g>
+                                <g>
+                                    <text x="104.7165" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">23</text>
+                                </g>
+                                <g>
+                                    <text x="128.7835" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">01</text>
+                                </g>
+                                <g>
+                                    <text x="152.85" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">03</text>
+                                </g>
+                                <g>
+                                    <text x="176.91649999999998" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">05</text>
+                                </g>
+                                <g>
+                                    <text x="200.9835" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">07</text>
+                                </g>
+                                <g>
+                                    <text x="225.05" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">09</text>
+                                </g>
+                                <g>
+                                    <text x="249.61650000000003" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">11</text>
+                                </g>
+                                <g>
+                                    <text x="273.1835" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">13</text>
+                                </g>
+                                <g>
+                                    <text x="297.25" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">15</text>
+                                </g>
+                                <g>
+                                    <text x="321.3165" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">17</text>
+                                </g>
+                                <g>
+                                    <text x="345.3835" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">19</text>
+                                </g>
+                                <g>
+                                    <text x="369.45" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">21</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M32.5 43.5 L 32.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="21" y="111.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">0</text>
+                                </g>
+                                <g>
+                                    <text x="10" y="98.4" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">400</text>
+                                </g>
+                                <g>
+                                    <text x="10" y="85.3" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">800</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="72.2" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">1200</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="59.1" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">1600</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="46" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">2000</text>
+                                </g>
+                                </g>
+                                <g></g>
+                                <g>
+                                <g>
+                                    <g transform="matrix(1,0,0,1,148,15)">
+                                        <path d="M0 4.5 L 15 4.5 15 7.5 0 7.5Z" stroke="#838DC8" stroke-width="0" fill="#838DC8"></path>
+                                        <g>
+                                            <text x="21" y="10" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 11px Arial; white-space: pre;">Data Usage(MB)</text>
+                                        </g>
+                                        <path d="M0 0 L 103 0 103 12 0 12Z" stroke="none" fill="#fff" fill-opacity="0" style="cursor: pointer;"></path>
+                                    </g>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'devices24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 17 / span 8; grid-row-end: span 3; order: 10;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 17 / span 8; grid-row-end: span 3; outline: none; order: 10; display: none; height: 159px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 17 / span 8; grid-row-end: span 3; order: 10; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">RAN</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divranOverallTrending" style="visibility: visible;">
+                    <span class="k-dropdownlist k-picker cbKpis k-picker-md k-rounded-md k-picker-solid" tabindex="0" role="combobox" aria-required="false" aria-haspopup="listbox" aria-expanded="false" aria-owns=":rf:-listbox-id" aria-describedby=":rf:-accessibility-id" id=":rf:" style="width: 240px;">
+                        <span id=":rf:-accessibility-id" class="k-input-inner"><span class="k-input-value-text">Network Availability %</span></span>
+                        <button tabindex="-1" type="button" aria-label="select" aria-hidden="true" class="k-button k-button-md k-button-solid k-button-solid-base k-icon-button k-input-button">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down k-button-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <select tabindex="-1" aria-hidden="true" style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                            <option value="[object Object]"></option>
+                        </select>
+                    </span>
+                    <button id=":rg:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.765625px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef25">
+                                <path d="M27.5 5.5 L 393.5 5.5 393.5 108.5 27.5 108.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                                <clippath clip-rule="evenodd" id="kdef26">
+                                <path d="M0 0 L 399 0 399 129 0 129Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 399 0 399 129 0 129Z" stroke="none" fill="none"></path>
+                                <path d="M27 5 L 393 5 393 108 27 108Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g>
+                                    <path d="M52.5 5.5 L 52.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M77.5 5.5 L 77.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M103.5 5.5 L 103.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M128.5 5.5 L 128.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M153.5 5.5 L 153.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M178.5 5.5 L 178.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M204.5 5.5 L 204.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M229.5 5.5 L 229.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M254.5 5.5 L 254.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M279.5 5.5 L 279.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M305.5 5.5 L 305.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M330.5 5.5 L 330.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M355.5 5.5 L 355.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M380.5 5.5 L 380.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                </g>
+                                <g>
+                                    <path d="M27.5 93.5 L 393.5 93.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 79.5 L 393.5 79.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 64.5 L 393.5 64.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 49.5 L 393.5 49.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 34.5 L 393.5 34.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 20.5 L 393.5 20.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M27.5 5.5 L 393.5 5.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                </g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M27.5 108.5 L 393.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef25)">
+                                    <g clip-path="url(#kdef26)">
+                                        <path d="M33.31 68.772 C 37.513 68.772 41.728 68.772 45.931 68.772 50.134 68.772 54.349 68.772 58.552 68.772 62.754 68.772 66.97 19.714 71.172 19.714 75.375 19.714 79.59 19.714 83.793 19.714 87.996 19.714 92.211 19.714 96.414 19.714 100.616 19.714 104.832 19.714 109.034 19.714 113.237 19.714 117.452 19.714 121.655 19.714 125.858 19.714 130.073 19.714 134.276 19.714 138.479 19.714 142.694 19.714 146.897 19.714 151.099 19.714 155.315 19.714 159.517 19.714 163.72 19.714 167.935 19.714 172.138 19.714 176.341 19.714 180.556 19.714 184.759 19.714 188.961 19.714 193.177 19.714 197.379 19.714 201.582 19.714 205.797 68.772 210 68.772 214.203 68.772 218.418 68.772 222.621 68.772 226.823 68.772 231.039 68.772 235.241 68.772 239.444 68.772 243.659 68.772 247.862 68.772 252.065 68.772 256.28 19.714 260.483 19.714 264.685 19.714 268.901 19.714 273.103 19.714 277.306 19.714 281.521 19.714 285.724 19.714 289.927 19.714 294.142 19.714 298.345 19.714 302.548 19.714 306.763 68.772 310.966 68.772 315.168 68.772 319.384 68.772 323.586 68.772 327.789 68.772 332.004 68.772 336.207 68.772 340.41 68.772 344.625 68.772 348.828 68.772 353.03 68.772 357.246 68.772 361.448 68.772 365.651 68.772 369.866 19.714 374.069 19.714 378.272 19.714 382.487 19.714 386.69 19.714" stroke="#F2665F" stroke-width="2" fill="none" opacity="1"></path>
+                                    </g>
+                                    <circle cx="210" cy="68.772" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="222.621" cy="68.772" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="235.241" cy="68.772" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="260.483" cy="19.714" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="273.103" cy="19.714" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="285.724" cy="19.714" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#F2665F" fill-opacity="1" style="display: none;"></circle>
+                                </g>
+                                <g>
+                                    <text x="27.810499999999998" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="53.05149999999999" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="78.293" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <text x="103.53450000000001" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">00</text>
+                                </g>
+                                <g>
+                                    <text x="128.776" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">02</text>
+                                </g>
+                                <g>
+                                    <text x="154.01749999999998" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">04</text>
+                                </g>
+                                <g>
+                                    <text x="179.2585" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">06</text>
+                                </g>
+                                <g>
+                                    <text x="204.5" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">08</text>
+                                </g>
+                                <g>
+                                    <text x="229.7415" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">10</text>
+                                </g>
+                                <g>
+                                    <text x="254.98250000000002" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">12</text>
+                                </g>
+                                <g>
+                                    <text x="280.224" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">14</text>
+                                </g>
+                                <g>
+                                    <text x="305.4655" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">16</text>
+                                </g>
+                                <g>
+                                    <text x="330.707" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="355.94849999999997" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="381.1895" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M27.5 5.5 L 27.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="11" y="111.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">70</text>
+                                </g>
+                                <g>
+                                    <text x="11" y="82.071" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">80</text>
+                                </g>
+                                <g>
+                                    <text x="11" y="52.643" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">90</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="23.214" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">100</text>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'ran24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 17 / span 8; grid-row-end: span 3; order: 11;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 17 / span 8; grid-row-end: span 3; outline: none; order: 11; display: none; height: 159px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 17 / span 8; grid-row-end: span 3; order: 11; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">CORE</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div class="tile-container">
+                <div class="top-child" style="bottom: 0px;">
+                    <div class="divChartButtons divcoreOverallTrending" style="visibility: visible;">
+                    <span class="k-dropdownlist k-picker cbKpis k-picker-md k-rounded-md k-picker-solid" tabindex="0" role="combobox" aria-required="false" aria-haspopup="listbox" aria-expanded="false" aria-owns=":rh:-listbox-id" aria-describedby=":rh:-accessibility-id" id=":rh:" style="width: 240px;">
+                        <span id=":rh:-accessibility-id" class="k-input-inner"><span class="k-input-value-text">Service Availability</span></span>
+                        <button tabindex="-1" type="button" aria-label="select" aria-hidden="true" class="k-button k-button-md k-button-solid k-button-solid-base k-icon-button k-input-button">
+                            <span class="k-icon k-svg-icon k-svg-i-caret-alt-down k-button-icon">
+                                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 352 128 160h256z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                        <select tabindex="-1" aria-hidden="true" style="opacity: 0; width: 1px; border: 0px; z-index: -1; position: absolute; left: 50%;">
+                            <option value="[object Object]"></option>
+                        </select>
+                    </span>
+                    <button id=":ri:" type="button" aria-haspopup="menu" aria-expanded="false" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-menu-button k-dropdown-button">
+                        <span class="k-icon k-svg-icon k-svg-i-clock k-button-icon">
+                            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 128h-32v160h160v-32H256zm0-96C132.3 32 32 132.3 32 256s100.3 224 224 224 224-100.3 224-224S379.7 32 256 32m0 416c-105.9 0-192-86.1-192-192S150.1 64 256 64s192 86.1 192 192-86.1 192-192 192"></path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button title="Line Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnLineChart"><img role="presentation" class="k-button-icon" src="{% static 'lineicon24gray.png' %}"></button><button title="Column Chart" class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button btnBarChart"><img role="presentation" class="k-button-icon" src="{% static 'baricon24gray.png' %}"></button>
+                    </div>
+                    <div class="k-chart k-widget" style="height: 100%; position: relative;">
+                    <div class="k-chart-surface" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="width: 100%; height: 100%; overflow: hidden; left: -0.328125px; top: -0.84375px;">
+                            <defs>
+                                <clippath clip-rule="evenodd" id="kdef29">
+                                <path d="M29.5 11.5 L 393.5 11.5 393.5 108.5 29.5 108.5Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                                <clippath clip-rule="evenodd" id="kdef30">
+                                <path d="M0 0 L 399 0 399 129 0 129Z" stroke="#000" stroke-linejoin="miter" fill="none"></path>
+                                </clippath>
+                            </defs>
+                            <g>
+                                <path d="M0 0 L 399 0 399 129 0 129Z" stroke="none" fill="none"></path>
+                                <path d="M29 10.5 L 393 10.5 393 108 29 108Z" stroke="none" fill="#fff" fill-opacity="0"></path>
+                                <g>
+                                <g>
+                                    <path d="M54.5 11.5 L 54.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M79.5 11.5 L 79.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M104.5 11.5 L 104.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M129.5 11.5 L 129.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M155.5 11.5 L 155.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M180.5 11.5 L 180.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M205.5 11.5 L 205.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M230.5 11.5 L 230.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M255.5 11.5 L 255.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M280.5 11.5 L 280.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M305.5 11.5 L 305.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M330.5 11.5 L 330.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M355.5 11.5 L 355.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                    <path d="M380.5 11.5 L 380.5 108.5" stroke="#E3E5E3" stroke-width="1" fill="none"></path>
+                                </g>
+                                <g>
+                                    <path d="M29.5 92.5 L 393.5 92.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M29.5 76.5 L 393.5 76.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M29.5 59.5 L 393.5 59.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M29.5 43.5 L 393.5 43.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M29.5 27.5 L 393.5 27.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    <path d="M29.5 11.5 L 393.5 11.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                </g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M29.5 108.5 L 393.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g clip-path="url(#kdef29)">
+                                    <g clip-path="url(#kdef30)">
+                                        <path d="M35.276 37.312 C 39.456 40.018 43.648 45.438 47.828 45.438 52.007 45.438 56.2 45.438 60.379 45.438 64.559 45.438 68.751 37.312 72.931 37.312 77.111 37.312 82.529 37.312 85.483 38.937 89.662 41.237 93.855 51.125 98.034 51.125 102.214 51.125 106.406 35.688 110.586 35.688 114.766 35.688 118.958 52.892 123.138 59.25 127.318 65.608 131.51 73.875 135.69 73.875 139.869 73.875 144.062 49.5 148.241 49.5 152.421 49.5 156.613 59.25 160.793 59.25 164.973 59.25 169.165 53.828 173.345 48.687 177.525 43.547 181.717 32.298 185.897 28.375 189.359 25.125 194.269 25.125 198.448 25.125 202.628 25.125 206.82 34.608 211 38.125 215.18 41.642 219.372 46.25 223.552 46.25 227.731 46.25 231.924 25.937 236.103 25.937 240.283 25.937 244.475 34.063 248.655 34.063 252.835 34.063 257.027 26.75 261.207 26.75 265.387 26.75 269.579 39.75 273.759 39.75 277.938 39.75 282.131 21.875 286.31 21.875 290.49 21.875 294.682 31.625 298.862 31.625 303.042 31.625 307.234 19.437 311.414 19.437 315.594 19.437 319.786 38.937 323.966 38.937 328.145 38.937 332.338 37.312 336.517 37.312 340.697 37.312 344.889 38.125 349.069 38.125 353.249 38.125 357.441 37.718 361.621 36.5 365.8 35.282 369.993 30.812 374.172 30.812 378.352 30.812 382.544 32.438 386.724 33.25" stroke="#838DC8" stroke-width="2" fill="none" opacity="1"></path>
+                                    </g>
+                                    <circle cx="98.034" cy="51.125" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#838DC8" fill-opacity="1" style="display: none;"></circle>
+                                    <circle cx="110.586" cy="35.688" r="2" stroke="#fff" stroke-width="2" stroke-opacity="1" fill="#838DC8" fill-opacity="1" style="display: none;"></circle>
+                                </g>
+                                <g>
+                                    <text x="29.776000000000003" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="54.879000000000005" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="79.983" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <text x="105.086" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">00</text>
+                                </g>
+                                <g>
+                                    <text x="130.19" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">02</text>
+                                </g>
+                                <g>
+                                    <text x="155.293" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">04</text>
+                                </g>
+                                <g>
+                                    <text x="180.3965" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">06</text>
+                                </g>
+                                <g>
+                                    <text x="205.5" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">08</text>
+                                </g>
+                                <g>
+                                    <text x="230.6035" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">10</text>
+                                </g>
+                                <g>
+                                    <text x="255.707" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">12</text>
+                                </g>
+                                <g>
+                                    <text x="280.81" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">14</text>
+                                </g>
+                                <g>
+                                    <text x="305.914" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">16</text>
+                                </g>
+                                <g>
+                                    <text x="331.017" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">18</text>
+                                </g>
+                                <g>
+                                    <text x="356.121" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">20</text>
+                                </g>
+                                <g>
+                                    <text x="381.224" y="122" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">22</text>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M29.5 11.5 L 29.5 108.5" stroke="rgba(0, 0, 0, 0.08)" stroke-width="1" fill="none"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <text x="5" y="111.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">98.8</text>
+                                </g>
+                                <g>
+                                    <text x="13" y="95.25" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">99</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="79" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">99.2</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="62.75" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">99.4</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="46.5" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">99.6</text>
+                                </g>
+                                <g>
+                                    <text x="5" y="30.25" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">99.8</text>
+                                </g>
+                                <g>
+                                    <text x="7" y="14" stroke="none" fill="rgb(66, 66, 66)" fill-opacity="1" style="font: 10px Arial; white-space: pre;">100</text>
+                                </g>
+                                </g>
+                                <g></g>
+                            </g>
+                        </svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'core24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+    <div style="grid-column: 17 / span 8; grid-row-end: span 3; order: 12;">
+        <div class="k-layout-item-hint" style="position: absolute; grid-column: 17 / span 8; grid-row-end: span 3; outline: none; order: 12; display: none; height: 159px; width: 411px;"></div>
+        <div class="k-tilelayout-item k-card" style="height: 100%; grid-column: 17 / span 8; grid-row-end: span 3; order: 12; touch-action: none;">
+        <div class="k-tilelayout-item-header k-card-header" style="padding-left: 36px; padding-top: 8px; text-align: left;">
+            <h5 class="k-card-title">CORE Alarms</h5>
+        </div>
+        <div class="k-tilelayout-item-body k-card-body">
+            <div id="divRanAlarmsGrid">
+                <div id="divSPOGGrid">
+                    <div id=":rk:" class="k-grid k-grid-md" data-keyboardnavscope="true" style="height: 100%; width: auto;">
+                    <div class="k-grid-aria-root" role="grid" aria-colcount="7" aria-rowcount="5" id=":rk:-role-element-id">
+                        <div class="k-grid-header" role="presentation">
+                            <div class="k-grid-header-wrap" role="presentation">
+                                <table class="k-table k-grid-header-table k-table-md" role="presentation" style="width: 1500px;">
+                                <colgroup>
+                                    <col width="100px">
+                                    <col width="200px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="100px">
+                                    <col width="800px">
+                                </colgroup>
+                                <thead class="k-table-thead" role="rowgroup" data-keyboardnavheader="true">
+                                    <tr class="k-table-row" role="row" aria-rowindex="1" style="touch-action: none;">
+                                        <th aria-sort="none" aria-colindex="1" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Last Changed</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="2" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Alarm Type</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="3" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Source</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="4" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Target</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="5" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Urgency</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="6" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Status</span></span></span></th>
+                                        <th aria-sort="none" aria-colindex="7" aria-selected="false" colspan="1" rowspan="1" class="k-table-th k-header" role="columnheader"><span class="k-cell-inner"><span class="k-link !k-cursor-default"><span class="k-column-title">Alarm Info</span></span></span></th>
+                                    </tr>
+                                </thead>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="k-grid-container" role="presentation">
+                            <div class="k-grid-content k-virtual-content" role="presentation">
+                                <div class="k-grid-table-wrap" role="presentation">
+                                <table class="k-table k-grid-table k-table-md" role="presentation" style="display: table; width: 1500px;">
+                                    <colgroup>
+                                        <col width="100px">
+                                        <col width="200px">
+                                        <col width="100px">
+                                        <col width="100px">
+                                        <col width="100px">
+                                        <col width="100px">
+                                        <col width="800px">
+                                    </colgroup>
+                                    <tbody class="k-table-tbody" role="rowgroup" data-keyboardnavbody="true">
+                                        <tr class="k-table-row k-master-row" role="row" aria-rowindex="2" absolute-row-index="0" data-grid-row-index="0" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">18:00:49</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">Automatically removing node</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">controller</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">rslice</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">info</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">INCOMPLETE</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Automatically removing node ''5GC.amd.com.n000'' from the system ( reason : Machine ''5GCore_M9_internal'' not active )</td>
+                                        </tr>
+                                        <tr class="k-table-row k-master-row k-table-alt-row k-alt" role="row" aria-rowindex="3" absolute-row-index="1" data-grid-row-index="1" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">18:00:49</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">Automatically removing node</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">controller</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">rslice</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">info</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">INCOMPLETE</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Automatically removing node ''5GCore.amd.com.n000'' from the system ( reason : Machine ''5GCore_M8'' not active )</td>
+                                        </tr>
+                                        <tr class="k-table-row k-master-row" role="row" aria-rowindex="4" absolute-row-index="2" data-grid-row-index="2" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">18:00:49</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">Automatically removing node</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">controller</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">rslice</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">info</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">INCOMPLETE</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Automatically removing node ''5GNrf.amd.com.n000'' from the system ( reason : Machine ''AMD_NRF'' not active )</td>
+                                        </tr>
+                                        <tr class="k-table-row k-master-row k-table-alt-row k-alt" role="row" aria-rowindex="5" absolute-row-index="3" data-grid-row-index="3" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">18:16:52</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">Automatically removing node</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">controller</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">rslice</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">info</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">INCOMPLETE</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Automatically removing node ''5GC.multi.com.n000'' from the system ( reason : Machine ''VM_2'' not active )</td>
+                                        </tr>
+                                        <tr class="k-table-row k-master-row" role="row" aria-rowindex="6" absolute-row-index="4" data-grid-row-index="4" style="height: 20px;">
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="1" aria-selected="false" data-grid-col-index="0">18:16:52</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="2" aria-selected="false" data-grid-col-index="1">Automatically removing node</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="3" aria-selected="false" data-grid-col-index="2">controller</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="4" aria-selected="false" data-grid-col-index="3">rslice</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="5" aria-selected="false" data-grid-col-index="4">info</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="6" aria-selected="false" data-grid-col-index="5">INCOMPLETE</td>
+                                            <td colspan="1" class="k-table-td" role="gridcell" aria-colindex="7" aria-selected="false" data-grid-col-index="6">Automatically removing node ''5GC.multi.com.n001'' from the system ( reason : Machine ''VM_1'' not active )</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <div class="k-height-container" role="presentation">
+                                <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="{% static 'alarms24.png' %}" height="24" style="position: absolute; top: 5px; left: 6px;">
+        </div>
+    </div>
+</div>
